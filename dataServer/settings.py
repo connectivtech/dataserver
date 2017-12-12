@@ -85,11 +85,12 @@ DATABASES = {
 # uncomment these to use mysql
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_name',
-        'USER': 'username',
-        'PASSWORD': 'superSecretPassword',
-        'HOST': 'hostname.com',
-        'PORT': '3306',
+        # get these from heroku , or, manually add in your env
+        'NAME': os.environ['db_name'],
+        'USER': os.environ['db_user'],
+        'PASSWORD': os.environ['db_password'],
+        'HOST': os.environ['db_hostname'],
+        'PORT': os.environ['db_port'],
     }
 }
 
