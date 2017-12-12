@@ -2,3 +2,4 @@ django
 djangorestframework
 mysqlclient
 django_heroku
+whitenoise
