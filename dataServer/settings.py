@@ -22,8 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = data_server_secret_key
-SECRET_KEY = os.environ['djanjo_secret_key']
+SECRET_KEY = data_server_secret_key
+# SECRET_KEY = os.environ['djanjo_secret_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,20 +81,20 @@ WSGI_APPLICATION = 'dataServer.wsgi.application'
 
 DATABASES = {
 # uncomment these to use SQL Lite
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
 # uncomment these to use mysql
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        # get these from heroku , or, manually add in your env
-        'NAME': os.environ['db_name'],
-        'USER': os.environ['db_user'],
-        'PASSWORD': os.environ['db_password'],
-        'HOST': os.environ['db_hostname'],
-        'PORT': os.environ['db_port'],
-    }
+#   'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     # get these from heroku , or, manually add in your env
+#     'NAME': os.environ['db_name'],
+#     'USER': os.environ['db_user'],
+#     'PASSWORD': os.environ['db_password'],
+#     'HOST': os.environ['db_hostname'],
+#     'PORT': os.environ['db_port'],
+# }
 }
 
 
