@@ -6,7 +6,9 @@ Or, python3 if you run multiple environments. Either way, you should *not* be ru
 
 To bootstrap:  
 git clone this repo    
-pip install -r requirements.txt  
+install pipenv - http://docs.python-guide.org/en/latest/dev/virtualenvs/  
+(pipenv has replaced requirements.txt)  
+  
 change manage.py dataServer.local_settings to your settings file (in dataServer/settings.py for example) 
 define database creds (or change to sqllite) in settings.py 
 update your secret key in secrets.py  
