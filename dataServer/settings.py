@@ -95,7 +95,9 @@ DATABASES = {
         'PASSWORD': os.environ['db_password'],
         'HOST': os.environ['db_hostname'],
         'PORT': os.environ['db_port'],
-        'OPTIONS': 'ssl': {'ca': os.path.join(os.path.dirname(os.path.dirname(__file__)), 'settings', 'rds-combined-ca-bundle.pem')
+        'OPTIONS': {
+                    'ssl': {'ca': os.path.join(os.path.dirname(os.path.dirname(__file__)), 'settings', 'rds-combined-ca-bundle.pem')
+                    }
         },
     }
 }   
