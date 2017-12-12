@@ -3,3 +3,5 @@ djangorestframework
 mysqlclient
 django_heroku
 whitenoise
+gunicorn
+psycopg2 
