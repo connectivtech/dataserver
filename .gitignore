@@ -1,6 +1,7 @@
 secrets.py
 db.sqlite3
 staticfiles/
+heroku-config-sets.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
