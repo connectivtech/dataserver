@@ -1,2 +1,1 @@
-worker: python manage.py runserver 0.0.0.0:$PORT
-# web: gunicorn dataserver.wsgi
+web: gunicorn dataServer.wsgi
