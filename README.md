@@ -15,3 +15,7 @@ http://localhost:8000
 login with what you created in createsuperuser  
 
 
+
+to grab data use
+`curl -H 'Accept: application/json; indent=4' -u admin:testpw http://138.197.216.233:8000/networkconnectivity/networkData/`
+
