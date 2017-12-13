@@ -28,8 +28,10 @@ class NetworkData(UUIDIdMixin):
     ip_address = models.CharField(max_length=39)
     external_ip = models.CharField(max_length=39)
     timestamp = models.DateTimeField("transmission started")
-    ping = models.CharField(max_length=10)
-    ping_destination = models.CharField(max_length=200)
+    ping = models.CharField(max_length=10, blank=True, null=True)
+    ping_destination = models.CharField(max_length=200, blank=True, null=True)
+    downspeed = models.CharField(max_length=50, blank=True, null=True)
+    upspeed = models.CharField(max_length=50, blank=True, null=True)
     # def __str__(self):
     #     return self.timestamp
 

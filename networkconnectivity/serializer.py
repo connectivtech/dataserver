@@ -20,5 +20,5 @@ class NetworkNodeSerializer(serializers.HyperlinkedModelSerializer):
 class NetworkDataSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = NetworkData
-        fields = ('node_name', 'ip_address', 'external_ip', 'external_ip', 'timestamp', 'ping', 'ping_destination')
+        fields = ('node_name', 'ip_address', 'external_ip', 'external_ip', 'timestamp', 'ping', 'ping_destination', 'downspeed', 'upspeed')
 
